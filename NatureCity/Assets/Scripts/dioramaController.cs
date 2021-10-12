@@ -21,6 +21,12 @@ public class dioramaController : MonoBehaviour
     Camera mainCamera;
 
     [SerializeField]
+    float minZoom;
+
+    [SerializeField]
+    float maxZoom;
+
+    [SerializeField]
     TextMeshProUGUI text;
 
     [SerializeField]
@@ -34,7 +40,7 @@ public class dioramaController : MonoBehaviour
 
     Vector3 dioramaUnfocusedPos = new Vector3(0, 1, -10);
 
-    Vector3 dioramaFocusedPos = new Vector3(-5, 1, -10);
+    Vector3 dioramaFocusedPos = new Vector3(-4.5f, 1, -10);
 
     float timePassed = 1f;
 
@@ -112,13 +118,13 @@ public class dioramaController : MonoBehaviour
         }
 
         //Zoom out
-        if (Input.mouseScrollDelta.y > 0 && rotationPoint.transform.position.z < 80)
+        if (Input.mouseScrollDelta.y > 0 && rotationPoint.transform.position.z < maxZoom)
         {
             transform.position += new Vector3(0, 0, 2);
         }
 
         //Zoom in
-        if (Input.mouseScrollDelta.y < 0 && rotationPoint.transform.position.z > 12)
+        if (Input.mouseScrollDelta.y < 0 && rotationPoint.transform.position.z > minZoom)
         {
             transform.position += new Vector3(0, 0, -2);
         }
