@@ -859,7 +859,7 @@ MonoBehaviour:
     fermentum. Vivamus ullamcorper arcu dui. Aliquam rhoncus tortor est, in aliquam
     ipsum pulvinar at. Mauris id diam purus. Maecenas porta mollis tellus, a viverra
     leo convallis in. '
-  sprite: {fileID: 21300000, guid: c10a320e9323f2f4484875bb1f46602e, type: 3}
+  sprite: {fileID: 21300000, guid: 478139f9ad35b4847af084c968bff32b, type: 3}
 --- !u!1 &1105968882
 GameObject:
   m_ObjectHideFlags: 0
