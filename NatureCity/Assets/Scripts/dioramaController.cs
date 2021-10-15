@@ -21,10 +21,10 @@ public class dioramaController : MonoBehaviour
     Camera mainCamera;
 
     [SerializeField]
-    float minZoom;
+    float maxZoom;
 
     [SerializeField]
-    float maxZoom;
+    float minZoom;
 
     [SerializeField]
     TextMeshProUGUI text;
@@ -38,9 +38,9 @@ public class dioramaController : MonoBehaviour
 
     public bool isFocused = false;
 
-    Vector3 dioramaUnfocusedPos = new Vector3(0, 1, -10);
+    public Vector3 dioramaUnfocusedPos = new Vector3(0, 30, -10);
 
-    Vector3 dioramaFocusedPos = new Vector3(-4.5f, 1, -10);
+    public Vector3 dioramaFocusedPos = new Vector3(-4.5f, 30, -10);
 
     float timePassed = 1f;
 
@@ -59,7 +59,7 @@ public class dioramaController : MonoBehaviour
         {
             if (isFocused == false)
             {
-                rotationPoint.transform.Rotate(new Vector3(0, 0, Input.GetAxis("Mouse X")) * Time.deltaTime * 500);
+                rotationPoint.transform.Rotate(new Vector3(0, -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * 500);
             }
         }
 
@@ -118,22 +118,34 @@ public class dioramaController : MonoBehaviour
         }
 
         //Zoom out
-        if (Input.mouseScrollDelta.y > 0 && rotationPoint.transform.position.z < maxZoom)
+        if (Input.mouseScrollDelta.y > 0 && mainCamera.transform.localPosition.z > minZoom)
         {
-            transform.position += new Vector3(0, 0, 2);
+            mainCamera.transform.Translate(new Vector3(0, 0, -2), Space.Self);
+            dioramaFocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaFocusedPos.y = mainCamera.transform.localPosition.y;
+            dioramaUnfocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaUnfocusedPos.y = mainCamera.transform.localPosition.y;
+            Debug.Log("zoom out");
         }
 
         //Zoom in
-        if (Input.mouseScrollDelta.y < 0 && rotationPoint.transform.position.z > minZoom)
+        if (Input.mouseScrollDelta.y < 0 && mainCamera.transform.localPosition.z < maxZoom)
         {
-            transform.position += new Vector3(0, 0, -2);
+            mainCamera.transform.Translate(new Vector3(0, 0, 2), Space.Self);
+            dioramaFocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaFocusedPos.y = mainCamera.transform.localPosition.y;
+            dioramaUnfocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaUnfocusedPos.y = mainCamera.transform.localPosition.y;
+            Debug.Log("zoom in");
         }
 
+
+        //Pans camera to the right 
         if (isFocused == true)
         {
             if(timePassed < dioramaMoveDur)
             {
-                mainCamera.transform.position = Vector3.Slerp(dioramaUnfocusedPos, dioramaFocusedPos, timePassed / dioramaMoveDur);
+                mainCamera.transform.position = Vector3.Lerp(dioramaUnfocusedPos, dioramaFocusedPos, timePassed / dioramaMoveDur);
                 timePassed += Time.deltaTime;
             }
             else
@@ -143,16 +155,17 @@ public class dioramaController : MonoBehaviour
             }
             
         }
+        //Pans camera to the left 
         else
         {
             if (timePassed < dioramaMoveDur)
             {
-                mainCamera.transform.position = Vector3.Slerp(dioramaFocusedPos, dioramaUnfocusedPos, timePassed / dioramaMoveDur);
+                mainCamera.transform.position = Vector3.Lerp(dioramaFocusedPos, dioramaUnfocusedPos, timePassed / dioramaMoveDur);
                 timePassed += Time.deltaTime;
             }
             else
             {
-                mainCamera.transform.position = dioramaUnfocusedPos;
+                /*mainCamera.transform.position = dioramaUnfocusedPos*/;
             }
             textBackground.SetActive(false);
         }
