@@ -8,68 +8,69 @@ public class dioramaController : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] GameObject focusTarget;
+    [SerializeField]
+    GameObject rotationPoint;
 
-    [SerializeField] GameObject lastFocusTarget;
+    [SerializeField]
+    GameObject focusTarget;
 
-    [SerializeField] public GameObject currentDiorama;
+    [SerializeField]
+    GameObject lastFocusTarget;
 
-    [SerializeField] GameObject CurrentSelectedDiorama;
+    [SerializeField]
+    Camera mainCamera;
 
-    [SerializeField] Canvas Canvas;
+    [SerializeField]
+    float maxZoom;
 
-    [SerializeField] Camera mainCamera;
+    [SerializeField]
+    float minZoom;
 
-    [SerializeField] float maxZoom;
+    [SerializeField]
+    TextMeshProUGUI text;
 
-    [SerializeField] float minZoom;
+    [SerializeField]
+    GameObject textBackground;
 
-    [SerializeField] TextMeshProUGUI text;
+    [SerializeField]
+    Image image;
 
-    [SerializeField] GameObject textBackground;
-
-    [SerializeField] Image image;
-
-    [SerializeField] GameObject DioramaMover;
 
     public bool isFocused = false;
 
-    Vector3 focusDir;
-    Quaternion focusRot;
+    public Vector3 dioramaUnfocusedPos = new Vector3(0, 30, -10);
 
-    Vector3 lastFocusDir;
-    Quaternion lastFocusRot;
+    public Vector3 dioramaFocusedPos = new Vector3(-4.5f, 30, -10);
 
-    Vector3 unFocusDir;
-    Quaternion unFocusRot;
+    float timePassed = 1f;
 
-    float timePassedCamera = 1f;
-
-    float cameraMoveDur = 0.5f;
-
-    float timePassedDiorama = 0f;
-
-    float dioramaMoveDur = 1f;
+    float dioramaMoveDur = 0.3f;
 
     void Start()
     {
-        mainCamera.transform.LookAt(currentDiorama.transform);
-        CurrentSelectedDiorama = currentDiorama;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //raycast to rotate diorama
+        //raycast to check focus
         if (Input.GetMouseButton(0))
         {
             if (isFocused == false)
             {
-                currentDiorama.transform.Rotate(new Vector3(0, -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * 500);
+                rotationPoint.transform.Rotate(new Vector3(0, -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * 500);
             }
         }
 
-        //raycast to check PoI
+        //if (Input.GetMouseButton(1))
+        //{
+        //    if (isFocused == false)
+        //    {
+        //        rotationPoint.transform.Translate(new Vector3(Input.GetAxis("Mouse X"), 0, 0), Space.World);
+        //    }
+        //}
+
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
@@ -81,40 +82,26 @@ public class dioramaController : MonoBehaviour
                 {
                     if (isFocused == false)
                     {
-                        timePassedCamera = 0;
+                        timePassed = 0;
                     }
 
                     isFocused = true;
 
-                    //if raycast hits PoI and no previous focus target exists
                     if (focusTarget == null)
                     {
-                        Debug.Log("Focused target");
                         focusTarget = hit.collider.gameObject;
-                        lastFocusTarget = focusTarget;
                         focusTarget.GetComponent<poiManager>().focus();
-
                         text.text = focusTarget.GetComponent<poiManager>().text;
                         image.sprite = focusTarget.GetComponent<poiManager>().sprite;
                     }
-                    //if raycast hits PoI and a previous focus target exists. Replace current and set previous
                     else
                     {
                         Debug.Log("Replaced lastFocusTarget");
-
                         lastFocusTarget = focusTarget;
                         lastFocusTarget.GetComponent<poiManager>().unfocused();
-                       
                         focusTarget = hit.collider.gameObject;
                         focusTarget.GetComponent<poiManager>().focus();
-                        
-                        if (focusTarget != lastFocusTarget)
-                        {
-                            FocusShift();
-                        }
-
                         text.text = focusTarget.GetComponent<poiManager>().text;
-                        image.sprite = focusTarget.GetComponent<poiManager>().sprite;
                     }
                 }
                 else if (hit.collider.gameObject.tag != "PoI")
@@ -122,9 +109,8 @@ public class dioramaController : MonoBehaviour
                     focusTarget.GetComponent<poiManager>().unfocused();
                     if (isFocused == true)
                     {
-                        timePassedCamera = 0;
+                        timePassed = 0;
                     }
-                    focusTarget = null;
                     isFocused = false;
                 }
             }
@@ -135,6 +121,10 @@ public class dioramaController : MonoBehaviour
         if (Input.mouseScrollDelta.y > 0 && mainCamera.transform.localPosition.z > minZoom)
         {
             mainCamera.transform.Translate(new Vector3(0, 0, -2), Space.Self);
+            dioramaFocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaFocusedPos.y = mainCamera.transform.localPosition.y;
+            dioramaUnfocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaUnfocusedPos.y = mainCamera.transform.localPosition.y;
             Debug.Log("zoom out");
         }
 
@@ -142,87 +132,42 @@ public class dioramaController : MonoBehaviour
         if (Input.mouseScrollDelta.y < 0 && mainCamera.transform.localPosition.z < maxZoom)
         {
             mainCamera.transform.Translate(new Vector3(0, 0, 2), Space.Self);
+            dioramaFocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaFocusedPos.y = mainCamera.transform.localPosition.y;
+            dioramaUnfocusedPos.z = mainCamera.transform.localPosition.z;
+            dioramaUnfocusedPos.y = mainCamera.transform.localPosition.y;
             Debug.Log("zoom in");
         }
 
 
+        //Pans camera to the right 
         if (isFocused == true)
         {
-
-            if (timePassedCamera < cameraMoveDur)
+            if(timePassed < dioramaMoveDur)
             {
-                focusDir = focusTarget.transform.position - mainCamera.transform.position;
-                focusRot = Quaternion.LookRotation(focusDir);
-                mainCamera.transform.rotation = Quaternion.Lerp(mainCamera.transform.rotation, focusRot, 8 * Time.deltaTime);
-
-                timePassedCamera += Time.deltaTime;
+                mainCamera.transform.position = Vector3.Lerp(dioramaUnfocusedPos, dioramaFocusedPos, timePassed / dioramaMoveDur);
+                timePassed += Time.deltaTime;
             }
             else
             {
-                mainCamera.transform.LookAt(focusTarget.transform);
+                mainCamera.transform.position = dioramaFocusedPos;
                 textBackground.SetActive(true);
             }
-        }
-        else
-        {
-            if (timePassedCamera < cameraMoveDur)
-            {
-                unFocusDir = currentDiorama.transform.position - mainCamera.transform.position;
-                unFocusRot = Quaternion.LookRotation(unFocusDir);
-                mainCamera.transform.rotation = Quaternion.Lerp(mainCamera.transform.rotation, unFocusRot, 8 * Time.deltaTime);
-
-                timePassedCamera += Time.deltaTime;
-            }
-            else
-            {
-                mainCamera.transform.LookAt(currentDiorama.transform);
-            }
-            textBackground.SetActive(false);
-        }
-
-        if (DioramaMover.GetComponent<dioramaSelect>().dioramaMovement == true)
-        {
-            Canvas.enabled = false;
-            if (timePassedDiorama < dioramaMoveDur)
-            {
-                DioramaMover.GetComponent<dioramaSelect>().enabled = false;
-                Debug.Log("Lerping");
-                DioramaMover.transform.position = Vector3.Lerp(DioramaMover.transform.position, DioramaMover.GetComponent<dioramaSelect>().SelectedDioramaPosition.transform.position, 5 * Time.deltaTime);
-                timePassedDiorama += Time.deltaTime;
-            }
-            else
-            {
-                Debug.Log("Lerpd");
-                DioramaMover.transform.position = DioramaMover.GetComponent<dioramaSelect>().SelectedDioramaPosition.transform.position;
-                timePassedDiorama = 0f;
-                DioramaMover.GetComponent<dioramaSelect>().dioramaMovement = false;
-
-                currentDiorama = DioramaMover.GetComponent<dioramaSelect>().SelectedDiorama;
-                DioramaMover.GetComponent<dioramaSelect>().enabled = true;
-                Canvas.enabled = true;
-            }
             
-            CurrentSelectedDiorama = DioramaMover.GetComponent<dioramaSelect>().SelectedDioramaPosition;
-        }        
-     }
-
-    public void FocusShift()
-    {
-        timePassedCamera = 0;
-        if (timePassedCamera < cameraMoveDur)
-        {
-            textBackground.SetActive(false);
-
-            lastFocusDir = focusTarget.transform.position - lastFocusTarget.transform.position;
-            lastFocusRot = Quaternion.LookRotation(lastFocusDir);
-            mainCamera.transform.rotation = Quaternion.Lerp(mainCamera.transform.rotation, lastFocusRot, 0.1f * Time.deltaTime);
-
-            timePassedCamera += Time.deltaTime;
         }
+        //Pans camera to the left 
         else
         {
-            mainCamera.transform.LookAt(focusTarget.transform);
-            textBackground.SetActive(true);
+            if (timePassed < dioramaMoveDur)
+            {
+                mainCamera.transform.position = Vector3.Lerp(dioramaFocusedPos, dioramaUnfocusedPos, timePassed / dioramaMoveDur);
+                timePassed += Time.deltaTime;
+            }
+            else
+            {
+                /*mainCamera.transform.position = dioramaUnfocusedPos*/;
+            }
+            textBackground.SetActive(false);
         }
     }
 }
