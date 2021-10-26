@@ -147,14 +147,11 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{9b46db7d-b0b8-4b90-88c5-309252e96251}">
-		<property name="start">
-			<value>8.6736173798840355e-19</value>
-		</property>
 		<property name="length">
-			<value>0.90587117835639952</value>
+			<value>0.8978711783564004</value>
 		</property>
 		<property name="timelockedOffset">
-			<value>0.53376600985221678</value>
+			<value>0.5417660098522159</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{05c47afa-7614-4f94-9eda-1ea719bef8fa}</destination>
