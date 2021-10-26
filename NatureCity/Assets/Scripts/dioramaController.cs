@@ -119,10 +119,12 @@ public class dioramaController : MonoBehaviour
                     //if raycast hits PoI and no previous focus target exists
                     if (focusTarget == null)
                     {
+
                         Debug.Log("Focused target");
                         focusTarget = hit.collider.gameObject;
-                        lastFocusTarget = focusTarget;
                         focusTarget.GetComponent<poiManager>().focus();
+                        lastFocusTarget = focusTarget;
+                        
 
                         text.text = focusTarget.GetComponent<poiManager>().text;
                         image.sprite = focusTarget.GetComponent<poiManager>().sprite;

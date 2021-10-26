@@ -46,6 +46,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &-5422839450950270379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/trigger/Click Crow
+  m_EditorClassIdentifier: 
+  Path: event:/trigger/Click Crow
+  guid: d7fc4b809dc4384cad356f6529cc8b31
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5500
 --- !u!114 &-4830891538880054136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,8 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/trigger/Click
   guid: fcd24e6d907ceb4fbf714efe265acc80
-  Banks:
-  - {fileID: 3574186528863078449}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -136,6 +158,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 70
   Length: 0
+--- !u!114 &-1282376001945271670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/trigger/Click Hog
+  m_EditorClassIdentifier: 
+  Path: event:/trigger/Click Hog
+  guid: db4eb38135449c43b08957ab1ee15fe0
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4500
 --- !u!114 &-386655083645182249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,14 +225,17 @@ MonoBehaviour:
   - {fileID: -6637003860046240202}
   - {fileID: -4830891538880054136}
   - {fileID: 6511550324579495710}
-  - {fileID: -2082853288396074342}
+  - {fileID: 3580516177053438375}
+  - {fileID: -5422839450950270379}
+  - {fileID: -1282376001945271670}
+  - {fileID: 5347732592079391309}
   EditorParameters:
   - {fileID: 3581698224779103059}
   MasterBanks:
   - {fileID: 3574186528863078449}
   StringsBanks:
   - {fileID: 7362181819723316856}
-  stringsBankWriteTime: 637708593179536612
+  stringsBankWriteTime: 637708619318656347
   cacheVersion: 8
 --- !u!114 &959002240247410044
 MonoBehaviour:
@@ -226,11 +274,34 @@ MonoBehaviour:
   Path: FMOD/NatureCityFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637708593179506690
+  lastModified: 637708619318626433
   FileSizes:
   - Name: Desktop
-    Value: 13936608
+    Value: 14393568
   Exists: 1
+--- !u!114 &3580516177053438375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/trigger/Click Large
+  m_EditorClassIdentifier: 
+  Path: event:/trigger/Click Large
+  guid: 5c293c7ebf2900449b6722a7bb86cf95
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
 --- !u!114 &3581698224779103059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +347,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 32500
+--- !u!114 &5347732592079391309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/trigger/Click small
+  m_EditorClassIdentifier: 
+  Path: event:/trigger/Click small
+  guid: fcd24e6d907ceb4fbf714efe265acc80
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 940
 --- !u!114 &5603427677928551750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,10 +453,10 @@ MonoBehaviour:
   Path: FMOD/NatureCityFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637708593179536612
+  lastModified: 637708619318656347
   FileSizes:
   - Name: Desktop
-    Value: 1114
+    Value: 1236
   Exists: 1
 --- !u!114 &7648311177901179333
 MonoBehaviour:
