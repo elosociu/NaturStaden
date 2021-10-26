@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{6d4ed2fc-7c90-4feb-bf71-4efe265acc80}">
 		<property name="name">
-			<value>Click</value>
+			<value>Click small</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -231,6 +231,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{970ef72b-1209-4c51-b1e3-2cf2ddc616c7}">
 		<relationship name="effects">
+			<destination>{45ff4f78-f651-4030-9e87-97cb3bd79814}</destination>
 			<destination>{c8d2277d-200b-4afd-ac1e-8f14523cadaa}</destination>
 		</relationship>
 	</object>
@@ -286,6 +287,14 @@
 		</property>
 		<property name="value">
 			<value>0</value>
+		</property>
+	</object>
+	<object class="ThreeEQEffect" id="{45ff4f78-f651-4030-9e87-97cb3bd79814}">
+		<property name="lowGain">
+			<value>-26</value>
+		</property>
+		<property name="midGain">
+			<value>-25.5</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{c8d2277d-200b-4afd-ac1e-8f14523cadaa}" />
