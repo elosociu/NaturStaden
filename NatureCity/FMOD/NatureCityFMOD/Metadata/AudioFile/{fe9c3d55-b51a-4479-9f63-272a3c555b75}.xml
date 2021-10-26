@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{fe9c3d55-b51a-4479-9f63-272a3c555b75}">
+		<property name="assetPath">
+			<value>freesound_explorer_2_1_2021_6_44_49.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6.5015873015873016</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ade1c9d-43fe-499e-af0c-418c6acbfe4c}</destination>
+		</relationship>
+	</object>
+</objects>

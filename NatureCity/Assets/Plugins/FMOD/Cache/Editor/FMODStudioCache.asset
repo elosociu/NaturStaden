@@ -1,5 +1,74 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2044204440521421083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Diorama 1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Diorama 1
+  guid: 98e8f4ba788db044a6e0c83b38a3bbf3
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 70
+  Length: 39000
+--- !u!114 &-1605693152148719696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Diorama 2
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Diorama 2
+  guid: a2a5b3629dbdf949a8560fa10d415d88
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 70
+  Length: 0
+--- !u!114 &-386655083645182249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/trigger/Click
+  m_EditorClassIdentifier: 
+  Path: event:/trigger/Click
+  guid: fcd24e6d907ceb4fbf714efe265acc80
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,14 +84,43 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 7362181819723316856}
   - {fileID: 3574186528863078449}
-  EditorEvents: []
-  EditorParameters: []
+  EditorEvents:
+  - {fileID: 8311996039556883211}
+  - {fileID: -386655083645182249}
+  - {fileID: -2044204440521421083}
+  - {fileID: -1605693152148719696}
+  - {fileID: 959002240247410044}
+  EditorParameters:
+  - {fileID: 6196111759192051143}
   MasterBanks:
   - {fileID: 3574186528863078449}
   StringsBanks:
   - {fileID: 7362181819723316856}
-  stringsBankWriteTime: 637695646120116361
+  stringsBankWriteTime: 637699180961701289
   cacheVersion: 8
+--- !u!114 &959002240247410044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Diorama 3
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Diorama 3
+  guid: abb0070602731b46906e6b4957ed0476
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 70
+  Length: 0
 --- !u!114 &3574186528863078449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,10 +136,32 @@ MonoBehaviour:
   Path: FMOD/NatureCityFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637695646120076482
+  lastModified: 637699180961666339
   FileSizes:
   - Name: Desktop
-    Value: 1012
+    Value: 1314432
+  Exists: 1
+--- !u!114 &6196111759192051143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Click
+  m_EditorClassIdentifier: 
+  Name: Click
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3231086432
+    data2: 2129766015
+  Type: 1
+  IsGlobal: 1
   Exists: 1
 --- !u!114 &7362181819723316856
 MonoBehaviour:
@@ -58,8 +178,53 @@ MonoBehaviour:
   Path: FMOD/NatureCityFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637695646120116361
+  lastModified: 637699180961701289
   FileSizes:
   - Name: Desktop
-    Value: 700
+    Value: 1026
   Exists: 1
+--- !u!114 &7648311177901179333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/New Event
+  guid: 98e8f4ba788db044a6e0c83b38a3bbf3
+  Banks: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 184000
+--- !u!114 &8311996039556883211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/New Event
+  guid: 7e9e5af2461b97418b796fe7526e7bc3
+  Banks:
+  - {fileID: 3574186528863078449}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32500

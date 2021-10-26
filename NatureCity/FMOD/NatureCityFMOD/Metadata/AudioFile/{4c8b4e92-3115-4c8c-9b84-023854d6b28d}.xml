@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{4c8b4e92-3115-4c8c-9b84-023854d6b28d}">
+		<property name="assetPath">
+			<value>Skogsambiens_fotsteg_loop.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>84</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ade1c9d-43fe-499e-af0c-418c6acbfe4c}</destination>
+		</relationship>
+	</object>
+</objects>

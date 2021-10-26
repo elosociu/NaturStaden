@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{bb18a366-34a8-4446-8134-c57764a3ae0c}">
+		<property name="assetPath">
+			<value>Tror denna blir bra.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.2506666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ade1c9d-43fe-499e-af0c-418c6acbfe4c}</destination>
+		</relationship>
+	</object>
+</objects>
