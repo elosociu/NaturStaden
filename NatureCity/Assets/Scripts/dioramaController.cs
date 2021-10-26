@@ -8,13 +8,15 @@ public class dioramaController : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] GameObject focusTarget;
+    [SerializeField] public GameObject focusTarget;
 
     [SerializeField] GameObject lastFocusTarget;
 
     [SerializeField] public GameObject currentDiorama;
 
     [SerializeField] GameObject CurrentSelectedDiorama;
+
+    [SerializeField] GameObject obstructingObject;
 
     [SerializeField] Canvas Canvas;
 
@@ -60,6 +62,33 @@ public class dioramaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Would have been used to raycast from camera to focustarget, disabeling meshrenderers inbetween
+        //Vector3 CameraRayDebug = transform.TransformDirection(Vector3.forward) * 10;
+        //Debug.DrawRay(Camera.main.transform.position, CameraRayDebug, Color.green, 900f, false);
+
+        //RaycastHit obstructed;
+        //Ray obstructedRay = Camera.main.ScreenPointToRay(currentDiorama.transform.position);
+        //if (Physics.Raycast(obstructedRay, out obstructed, Vector3.Distance(Camera.main.transform.position, currentDiorama.transform.position)))
+        //{
+
+        //    if (obstructed.collider.gameObject.tag == "Environment")
+        //    {
+        //        Debug.Log("hit environment");
+        //        obstructingObject = obstructed.collider.gameObject;
+        //        obstructingObject.GetComponent<MeshRenderer>().enabled = false;
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.Log("Reenabled renderer");
+        //    if (obstructingObject != null)
+        //    {
+        //        obstructingObject.GetComponent<MeshRenderer>().enabled = true;
+
+        //    }
+        //}
+
+
         //raycast to rotate diorama
         if (Input.GetMouseButton(0))
         {
