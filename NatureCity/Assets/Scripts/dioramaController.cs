@@ -57,6 +57,7 @@ public class dioramaController : MonoBehaviour
     {
         mainCamera.transform.LookAt(currentDiorama.transform);
         CurrentSelectedDiorama = currentDiorama;
+        lastFocusTarget = currentDiorama;
     }
 
     // Update is called once per frame
@@ -148,7 +149,8 @@ public class dioramaController : MonoBehaviour
                 }
                 else if (hit.collider.gameObject.tag != "PoI")
                 {
-                    focusTarget.GetComponent<poiManager>().unfocused();
+                    //if (focusTarget != null)
+                        focusTarget.GetComponent<poiManager>().unfocused();
                     if (isFocused == true)
                     {
                         timePassedCamera = 0;
