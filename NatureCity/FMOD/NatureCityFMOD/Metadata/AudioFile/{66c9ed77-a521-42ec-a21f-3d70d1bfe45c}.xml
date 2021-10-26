@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{66c9ed77-a521-42ec-a21f-3d70d1bfe45c}">
+		<property name="assetPath">
+			<value>528661__taavhaap__relaxing-forest-birds-chirping-in-the-north-woods-37.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6.060408163265306</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0ade1c9d-43fe-499e-af0c-418c6acbfe4c}</destination>
+		</relationship>
+	</object>
+</objects>
