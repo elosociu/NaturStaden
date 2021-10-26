@@ -149,7 +149,7 @@ public class dioramaController : MonoBehaviour
                 }
                 else if (hit.collider.gameObject.tag != "PoI")
                 {
-                    //if (focusTarget != null)
+                    if (focusTarget != null)
                         focusTarget.GetComponent<poiManager>().unfocused();
                     if (isFocused == true)
                     {
