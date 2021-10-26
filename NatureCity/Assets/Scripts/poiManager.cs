@@ -27,12 +27,10 @@ public class poiManager : MonoBehaviour
     public void focus()
     {
         FMODUnity.RuntimeManager.PlayOneShot(focusAudio);
-
     }
 
     public void unfocused()
     {
         FMODUnity.RuntimeManager.PlayOneShot(unfocusAudio);
-
     }
 }

@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000263BD47F3C8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000281213DED08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,19 +20,23 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-09', format=5, channels=2, frequency=48000, lengthbytes=37664, lengthpcm=174288, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.455841.
@@ -41,14 +45,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-19', format=5, channels=2, frequency=48000, lengthbytes=38688, lengthpcm=176796, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.558624.
@@ -57,14 +61,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-05', format=5, channels=2, frequency=48000, lengthbytes=40064, lengthpcm=190589, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.455688.
@@ -73,14 +77,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-22', format=5, channels=2, frequency=48000, lengthbytes=39488, lengthpcm=181812, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.452454.
@@ -89,14 +93,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-07', format=5, channels=2, frequency=48000, lengthbytes=37312, lengthpcm=171781, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.561279.
@@ -105,14 +109,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-17', format=5, channels=2, frequency=48000, lengthbytes=40288, lengthpcm=189335, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.454529.
@@ -121,14 +125,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-11', format=5, channels=2, frequency=48000, lengthbytes=32704, lengthpcm=151719, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.369629.
@@ -137,14 +141,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-13', format=5, channels=2, frequency=48000, lengthbytes=38752, lengthpcm=181812, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.530365.
@@ -153,14 +157,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-26', format=5, channels=2, frequency=48000, lengthbytes=37792, lengthpcm=178050, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.522125.
@@ -169,14 +173,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-15', format=5, channels=2, frequency=48000, lengthbytes=33312, lengthpcm=152973, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.331848.
@@ -185,14 +189,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-27', format=5, channels=2, frequency=48000, lengthbytes=33984, lengthpcm=161750, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.332520.
@@ -201,14 +205,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='492655__theveomammoth11__wild-boar-grunting-growling-24', format=5, channels=2, frequency=48000, lengthbytes=33280, lengthpcm=151719, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.371735.
@@ -217,255 +221,279 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A19547F5D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8056C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8056C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8056C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8056C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000262DF42C918
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2822D68
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Pom-001', format=5, channels=2, frequency=48000, lengthbytes=6080, lengthpcm=69102, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.481384.
 [LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD494D78 : node = 000002632ABCC7C0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD494D78
+[LOG] SystemI::createSound                     : setdata soundi = 0000027EF3DE5488 : node = 0000028103246C40
+[LOG] SystemI::createSound                     : add node to async list : head = 000002810326DFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000027EF3DE5488
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCC8D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028103246D50
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD494D78
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD495AF8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD495AF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000027EF3DE5488
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028111DEA8B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028111DEA8B8
 [LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49F7E8 : node = 000002632ABCEE80
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49F7E8
+[LOG] SystemI::createSound                     : setdata soundi = 0000027EF3DE5638 : node = 0000028103246240
+[LOG] SystemI::createSound                     : add node to async list : head = 000002810326DFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000027EF3DE5638
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCEF90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028103246350
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000027EF3DE5EA8 : node = 00000281032464C0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000002810326DFB8.  list count = 0
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49F7E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49CC08
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49CC08
-[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD495E58 : node = 000002632ABCDD00
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD495E58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000027EF3DE5638
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000027EF3DE5EA8
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCDE10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000281032465D0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD495E58
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49BCD8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49BCD8
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49F7E8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002632F57F148)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49CC08)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000027EF3DE5EA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002811D798448
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002811D798448
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002811D798298
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002811D798298
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (0000027EF3DE5488)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002814BD443B8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000028111DEA8B8)
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (0000027EF3DE5638)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002814BD47618)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002811D798298)
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (0000027EF3DE5EA8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002814BD47138)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002811D798448)
+[LOG] SoundI::release                          :  (0000027EF7E62E28)
+[LOG] SoundI::release                          :     Pom-001 (000002814BD46F98)
+[LOG] SoundI::release                          :  (0000027EF7E64808)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-05 (000002814BD47AF8)
+[LOG] SoundI::release                          :  (0000027EF7E64F38)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-07 (000002814BD44218)
+[LOG] SoundI::release                          :  (0000027EF7E64DC8)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-09 (000002814BD45DB8)
+[LOG] SoundI::release                          :  (0000027EF7E61E58)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-11 (000002814BD46778)
+[LOG] SoundI::release                          :  (0000027EF7E63558)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-13 (000002814BD47478)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2825498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='404687__straget__hooded-crow-02', format=5, channels=2, frequency=48000, lengthbytes=52800, lengthpcm=195604, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.077179.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2825498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='404687__straget__hooded-crow-17', format=5, channels=2, frequency=48000, lengthbytes=64128, lengthpcm=243252, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090302.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2825498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='404687__straget__hooded-crow-10', format=5, channels=2, frequency=48000, lengthbytes=52160, lengthpcm=195604, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.077057.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2825498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='404687__straget__hooded-crow-06', format=5, channels=2, frequency=48000, lengthbytes=45376, lengthpcm=170527, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.070526.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2825498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Pom-001', format=5, channels=2, frequency=48000, lengthbytes=6080, lengthpcm=69102, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.481384.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11801568
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2592000
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D46028F3A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFDC5960E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFDC5960B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFDC5961B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFDC596270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027EF2825498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='404687__straget__hooded-crow-14', format=5, channels=2, frequency=48000, lengthbytes=51680, lengthpcm=195604, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.068665.
 [LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD4A0A78 : node = 000002632ABCC900
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD4A0A78
+[LOG] SystemI::createSound                     : setdata soundi = 0000027EF3DE4A68 : node = 0000028103246600
+[LOG] SystemI::createSound                     : add node to async list : head = 000002810326DFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000027EF3DE4A68
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCCA10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028103246710
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000027EF3DE48B8 : node = 0000028103246C40
+[LOG] SystemI::createSound                     :     add node to async list : head = 000002810326DFB8.  list count = 0
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD4A0A78
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD4A0718
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD4A0718
-[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49BE88 : node = 000002632ABCDE40
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49BE88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000027EF3DE4A68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000027EF3DE48B8
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCDF50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028103246D50
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49BE88
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49CDB8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49CDB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000027EF3DE48B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028111DEA8B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028111DEA8B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002811D798958
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002811D798958
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (0000027EF3DE4A68)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002814BD45DB8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000028111DEA8B8)
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (0000027EF3DE48B8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002814BD443B8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002811D798958)
 [LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49E8B8 : node = 000002632ABCDF80
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49E8B8
+[LOG] SystemI::createSound                     : setdata soundi = 0000027EF3DE4F78 : node = 0000028103246C40
+[LOG] SystemI::createSound                     : add node to async list : head = 000002810326DFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000027EF3DE4F78
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCE090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028103246D50
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49E8B8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD4A08C8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD4A08C8
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD4A0A78)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002633332E8C8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD4A0718)
-[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49B618 : node = 000002632ABCEE80
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49B618
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCEF90
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49B618
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49EF78
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49EF78
-[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49CC08 : node = 000002632ABCE0C0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49CC08
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCE1D0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49CC08
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49A6E8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49A6E8
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD494D78)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002632F57E788)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD495AF8)
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49E8B8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263349D9D58)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD4A08C8)
-[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49F638 : node = 000002632ABCDF80
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49F638
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCE090
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49F638
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49B108
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49B108
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49CC08)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263330125F8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49A6E8)
-[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000263BD49F2D8 : node = 000002632ABCC7C0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000263BDCBF268.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49F2D8
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11801568
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2592000
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002632ABCC8D0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49F2D8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000263BD49CC08
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000263BD49CC08
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD495E58)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000026333330128)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49BCD8)
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49F2D8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263330125F8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49CC08)
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49BE88)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263333302C8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49CDB8)
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49B618)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263349DA3D8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49EF78)
-[LOG] SoundI::release                          :  (00000263319EBFD8)
-[LOG] SoundI::release                          :     Pom-001 (000002632E233C08)
-[LOG] SoundI::release                          :  (00000263319EC148)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-05 (000002632A7A7C78)
-[LOG] SoundI::release                          :  (00000263319E91D8)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-07 (000002632A7A72B8)
-[LOG] SoundI::release                          :  (00000263319EABB8)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-09 (000002632A7A6F78)
-[LOG] SoundI::release                          :  (00000263319EBE68)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-11 (000002633491F558)
-[LOG] SoundI::release                          :  (00000263319EC2B8)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-13 (000002633491FBD8)
-[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000263BD49F638)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000026333012AD8)
-[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000263BD49B108)
-[LOG] SoundI::release                          :  (00000263319EA768)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-15 (00000263349200B8)
-[LOG] SoundI::release                          :  (00000263319E9D58)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-17 (00000263349203F8)
-[LOG] SoundI::release                          :  (00000263319E9BE8)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-19 (000002632A7A7118)
-[LOG] SoundI::release                          :  (00000263319EB458)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-22 (000002632A7A7AD8)
-[LOG] SoundI::release                          :  (00000263319EB178)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-24 (000002632E233A68)
-[LOG] SoundI::release                          :  (00000263319EB8A8)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-26 (000002633491FD78)
-[LOG] SoundI::release                          :  (00000263319EB2E8)
-[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-27 (000002632E233728)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000027EF3DE4F78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028111DEA8B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028111DEA8B8
+[LOG] SoundI::release                          :  (0000027EF7E5E7B8)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-15 (000002814BD46DF8)
+[LOG] SoundI::release                          :  (0000027EF7E5FEB8)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-17 (000002814BD48E78)
+[LOG] SoundI::release                          :  (0000027EF7E63F68)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-19 (000002814BD44078)
+[LOG] SoundI::release                          :  (0000027EF7E654F8)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-22 (000002814BD47958)
+[LOG] SoundI::release                          :  (0000027EF7E5EC08)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-24 (000002814BD45258)
+[LOG] SoundI::release                          :  (0000027EF7E5E648)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-26 (000002814BD46C58)
+[LOG] SoundI::release                          :  (0000027EF7E5F338)
+[LOG] SoundI::release                          :     492655__theveomammoth11__wild-boar-grunting-growling-27 (000002814BD47C98)
+[LOG] SoundI::release                          :  (0000027EF7E61448)
+[LOG] SoundI::release                          :     404687__straget__hooded-crow-02 (000002814BD48B38)
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (0000027EF3DE4F78)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (000002814BD46F98)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000028111DEA8B8)
+[LOG] SoundI::release                          :  (0000027EF7E612D8)
+[LOG] SoundI::release                          :     404687__straget__hooded-crow-06 (000002814BD44218)
+[LOG] SoundI::release                          :  (0000027EF7E60198)
+[LOG] SoundI::release                          :     404687__straget__hooded-crow-10 (000002814BD46778)
+[LOG] SoundI::release                          :  (0000027EF7E61E58)
+[LOG] SoundI::release                          :     404687__straget__hooded-crow-14 (000002814BD47478)
+[LOG] SoundI::release                          :  (0000027EF7E63558)
+[LOG] SoundI::release                          :     404687__straget__hooded-crow-17 (000002814BD45738)
+[LOG] SoundI::release                          :  (0000027EF7E5DC38)
+[LOG] SoundI::release                          :     Pom-001 (000002814BD44BD8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
