@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000019D216894E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001E74EEDF628 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,19 +20,19 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          : Skogsambiens_utan_steg_loop (0000019D23834678)
-[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (0000019C99FA8888)
-[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (0000019D4D2C8558)
-[LOG] SoundI::release                          : Skogsambiens_fotsteg_loop (0000019D23834318)
-[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (0000019C99FA86E8)
-[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (0000019D4D2CAA78)
-[LOG] SoundI::release                          : Torget_Karlshamn_loop (0000019C91DE41A8)
-[LOG] SoundI::release                          :     Torget_Karlshamn_loop (0000019C99FA6E88)
-[LOG] SoundI::release                          :     Torget_Karlshamn_loop (0000019D4D2C9998)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E757399F28
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E757399F28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E757399868
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E757399868
+[LOG] SoundI::release                          : Skogsambiens_fotsteg_loop (000001E757396418)
+[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (000001E6985FFE38)
+[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (000001E757399F28)
+[LOG] SoundI::release                          : Torget_Karlshamn_loop (000001E757394C78)
+[LOG] SoundI::release                          :     Torget_Karlshamn_loop (000001E698601B78)
+[LOG] SoundI::release                          :     Torget_Karlshamn_loop (000001E757399868)
+[LOG] SoundI::release                          : Skogsambiens_utan_steg_loop (000001E757399BC8)
+[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (000001E6986007F8)
+[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (000001E757399A18)
 [LOG] Thread::callback                         : FMOD Convolution thread finished.
 [LOG] Thread::callback                         : FMOD Convolution thread finished.
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
