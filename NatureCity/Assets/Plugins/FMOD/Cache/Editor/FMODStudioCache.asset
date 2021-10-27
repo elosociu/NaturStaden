@@ -113,7 +113,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 4500
+  Length: 1470
 --- !u!114 &-4830891538880054136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
   - {fileID: 3574186528863078449}
   StringsBanks:
   - {fileID: 7362181819723316856}
-  stringsBankWriteTime: 637708630821411504
+  stringsBankWriteTime: 637709782631481413
   cacheVersion: 8
 --- !u!114 &340109975010333643
 MonoBehaviour:
@@ -432,10 +432,10 @@ MonoBehaviour:
   Path: FMOD/NatureCityFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637708630821381477
+  lastModified: 637709782631451486
   FileSizes:
   - Name: Desktop
-    Value: 14393568
+    Value: 14089728
   Exists: 1
 --- !u!114 &3580516177053438375
 MonoBehaviour:
@@ -655,7 +655,7 @@ MonoBehaviour:
   Path: FMOD/NatureCityFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637708630821411504
+  lastModified: 637709782631481413
   FileSizes:
   - Name: Desktop
     Value: 1236

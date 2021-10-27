@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000185C567FE18 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000185C567D868 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,17 +20,79 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251CDB78
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251CDB78
-[LOG] SoundI::release                          : Skogsambiens_fotsteg_loop (00000186251CCC48)
-[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (0000018513AF1E38)
-[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (00000186251CDB78)
-[LOG] SoundI::release                          : Torget_Karlshamn_loop (00000186251D1328)
-[LOG] SoundI::release                          :     Torget_Karlshamn_loop (0000018513AF17B8)
-[LOG] SoundI::release                          :     Torget_Karlshamn_loop (00000186251CC8E8)
-[LOG] SoundI::release                          : Skogsambiens_utan_steg_loop (00000186251CD158)
-[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (0000018513AF12D8)
-[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (00000186251CE598)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251CD9C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251CD9C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251D2408
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251D2408
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11494432
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2595296
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000463EA2F5B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFDBC60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFDBC60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFDBC61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFDBC6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000184C3E5CF08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Pom-001', format=5, channels=2, frequency=48000, lengthbytes=6080, lengthpcm=69102, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.481384.
+[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000186251D5BB8 : node = 000001861D639700
+[LOG] SystemI::createSound                     : add node to async list : head = 000001850F454BC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251D5BB8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11494432
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2595296
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001861D639810
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251D5BB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251D3D58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251D3D58
+[LOG] SystemI::createSound                     : filename = FMOD/NatureCityFMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000186251D65D8 : node = 000001861D639200
+[LOG] SystemI::createSound                     : add node to async list : head = 000001850F454BC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251D65D8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/NatureCityFMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11494432
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2595296
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001861D639310
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='204030__duckduckpony__foliage-rustling-001', format=5, channels=2, frequency=48000, lengthbytes=431520, lengthpcm=2066432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.529164.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251D65D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000186251D3F08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000186251D3F08
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000186251D65D8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000018513AF1C98)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000186251D3F08)
+[LOG] SoundI::release                          : Torget_Karlshamn_loop (00000186251D2258)
+[LOG] SoundI::release                          :     Torget_Karlshamn_loop (00000185157D7588)
+[LOG] SoundI::release                          :     Torget_Karlshamn_loop (00000186251D2408)
+[LOG] SoundI::release                          : Skogsambiens_utan_steg_loop (00000186251D0248)
+[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (00000185157D6208)
+[LOG] SoundI::release                          :     Skogsambiens_utan_steg_loop (00000186251D0FC8)
+[LOG] SoundI::release                          : 204030__duckduckpony__foliage-rustling-001 (00000186251D5BB8)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (0000018513AF2658)
+[LOG] SoundI::release                          :     204030__duckduckpony__foliage-rustling-001 (00000186251D3D58)
+[LOG] SoundI::release                          : Skogsambiens_fotsteg_loop (00000186251CC228)
+[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (00000185157D6D68)
+[LOG] SoundI::release                          :     Skogsambiens_fotsteg_loop (00000186251CD9C8)
+[LOG] SoundI::release                          :  (00000185CCEABA28)
+[LOG] SoundI::release                          :     Pom-001 (0000018513AF1478)
 [LOG] Thread::callback                         : FMOD Convolution thread finished.
 [LOG] Thread::callback                         : FMOD Convolution thread finished.
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
