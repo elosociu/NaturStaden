@@ -132,5 +132,5 @@ MonoBehaviour:
     \xE4r vanligtvis brun p\xE5 ovansidan med en ljusare undersida, men andra f\xE4rgvariationer
     som svart (till f\xF6ljd av melanism) kan f\xF6rekomma."
   sprite: {fileID: 21300000, guid: b17bf051f3be56c45ae939be47e97f24, type: 3}
-  focusAudio: event:/trigger/Click Large
+  focusAudio: event:/trigger/Click small
   unfocusAudio: event:/trigger/Click small
